@@ -35,13 +35,13 @@ jobs:
       run: ctest -C ${{env.BUILD_TYPE}}
       
     - name: Tar files
-      run: tar -cvf VMProfiler-QT.tar build/Release
+      run: tar -cvf VMDevirt.tar build/Release
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
         name: my-artifact
-        path: VMProfiler-QT.tar
+        path: VMDevirt.tar
       
     - name: Compress artifacts
       uses: papeloto/action-zip@v1
