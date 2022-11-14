@@ -2,9 +2,9 @@ name: CMake
 
 on:
   push:
-    branches: [ "master desktop laptop" ]
+    branches: [ "desktop" ]
   pull_request:
-    branches: [ "master desktop laptop" ]
+    branches: [ "desktop" ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
